@@ -187,6 +187,9 @@ void calculate_opcode(struct tab_entry *tabroot, struct instruction *tmp_i)
         } else if ((strcmp(tmp_i->mnumonic, ".INCLUDE") == 0) ||
                 (strcmp(tmp_i->mnumonic, ".REQUIRE") == 0)) {
 
+        } else if (strcmp(tmp_i->mnumonic, ".PLUGIN") == 0) {
+            //which header to append
+
         } else if (strcmp(tmp_i->mnumonic, ".ORG") == 0) {
             //set assumed PC register value
 
